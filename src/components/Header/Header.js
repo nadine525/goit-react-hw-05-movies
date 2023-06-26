@@ -1,4 +1,4 @@
-// import { HeaderContainer, StyledLink } from './Header.styled';
+// import { HeaderContainer} from './Header.styled';
 // import { NavLink } from 'react-router-dom';
 
 // const Header = () => {
