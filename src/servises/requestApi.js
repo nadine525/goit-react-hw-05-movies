@@ -11,3 +11,11 @@ export const getTrendingMovies = async () => {
 
   return response.data;
 };
+
+export const getMovieDetails = async id => {
+  const response = await axios.get(
+    `${BASE_URL}movie/${id}?api_key=${API_KEY}&language=eu-US`
+  );
+
+  return response.data;
+};
