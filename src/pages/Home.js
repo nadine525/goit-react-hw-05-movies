@@ -1,4 +1,4 @@
-import { getTrendingMovies } from 'servises/requestApi';
+// import { getTrendingMovies } from 'servises/requestApi';
 
 const Home = () => {
   return <div>Домашня сторінка</div>;
