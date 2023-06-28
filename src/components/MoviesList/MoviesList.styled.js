@@ -8,7 +8,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   &:not(:last-child) {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
   }
 `;
 
