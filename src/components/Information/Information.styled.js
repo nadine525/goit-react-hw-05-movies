@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Division = styled.div`
   display: flex;
   flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #212121;
 `;
 
 export const Image = styled.img`

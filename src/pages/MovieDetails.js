@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams, useLocation, Outlet } from 'react-router-dom';
 import { getMovieDetails } from '../servises/requestApi';
 import GoBackButton from 'components/Button/Button';
 import Information from 'components/Information/Information';
+import Additional from 'components/Additional/Additional';
 
 const MovieDetails = () => {
   const [movie, setMovie] = useState(null);
@@ -26,7 +27,9 @@ const MovieDetails = () => {
     <>
       <GoBackButton backLinkHref={backLinkHref} />
       <Information movie={movie} />
-      {/* <Additional /> */}
+      <Additional location={backLinkHref} />
+
+      <Outlet />
     </>
   );
 };

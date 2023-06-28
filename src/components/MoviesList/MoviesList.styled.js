@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const List = styled.ul`
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 `;
 
 export const ListItem = styled.li`
@@ -14,4 +14,9 @@ export const ListItem = styled.li`
 
 export const StyledLink = styled(Link)`
   color: #212121;
+  /* text-decoration: underline; */
+
+  &:hover {
+    color: black;
+  }
 `;
