@@ -6,7 +6,7 @@ const GoBackButton = ({ backLinkHref }) => {
   return (
     <Division>
       <StyledLink to={backLinkHref}>
-        <BsArrowLeft size={iconSize.xs} />
+        <BsArrowLeft size={iconSize.md} />
         Go back
       </StyledLink>
     </Division>
