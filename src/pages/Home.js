@@ -4,7 +4,7 @@ import Caption from 'components/Caption';
 import MoviesList from 'components/MoviesList/MoviesList';
 
 const Home = () => {
-  const [movies, setMovies] = useState(null);
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     getTrendingMovies()
