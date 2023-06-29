@@ -7,3 +7,8 @@ export const Comment = styled.p`
 export const Item = styled.li`
   margin-bottom: 10px;
 `;
+
+export const Sory = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+`;
