@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { getMovieSearch } from '../servises/requestApi';
+import { Input, Button } from './Movies.styled';
 
 const Movies = () => {
   const [input, setInput] = useState('');
@@ -37,8 +38,8 @@ const Movies = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="query" value={input} onChange={handleChange} />
-        <button type="submit">Search</button>
+        <Input type="text" name="query" value={input} onChange={handleChange} />
+        <Button type="submit">Search</Button>
       </form>
     </>
   );
