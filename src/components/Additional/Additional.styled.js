@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Division = styled.div`
+  margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #212121;
@@ -25,5 +26,6 @@ export const StyledLink = styled(Link)`
   &:hover,
   &:focus {
     color: #c75124;
+    text-decoration: underline;
   }
 `;

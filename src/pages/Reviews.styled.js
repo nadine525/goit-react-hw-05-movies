@@ -12,3 +12,11 @@ export const Sory = styled.p`
   font-size: 16px;
   font-weight: 500;
 `;
+
+export const List = styled.ul`
+  margin-bottom: 12px;
+`;
+
+export const AuthorName = styled.p`
+  margin-bottom: 8px;
+`;

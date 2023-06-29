@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getMovieReviews } from '../servises/requestApi';
 import { useParams } from 'react-router-dom';
-import { Comment, Item, Sory } from './Reviews.styled';
+import { Comment, Item, Sory, List, AuthorName } from './Reviews.styled';
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -15,7 +15,7 @@ const Reviews = () => {
       .catch(console.log);
   }, [movieId]);
 
-  // console.log(reviews);
+  console.log(reviews);
 
   if (!reviews) {
     return;
@@ -23,15 +23,17 @@ const Reviews = () => {
 
   return (
     <>
-      {reviews > 0 ? (
-        <ul>
+      {reviews.length > 0 ? (
+        <List>
           {reviews.map(({ id, author, content }) => (
             <Item key={id}>
-              Author: <b>{author}</b>
+              <AuthorName>
+                Author: <b>{author}</b>
+              </AuthorName>
               <Comment>{content}</Comment>
             </Item>
           ))}
-        </ul>
+        </List>
       ) : (
         <Sory>We don't have any reviews for this movie.</Sory>
       )}
