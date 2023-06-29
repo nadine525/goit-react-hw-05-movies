@@ -14,9 +14,8 @@ export const ListItem = styled.li`
 
 export const StyledLink = styled(Link)`
   color: #212121;
-  /* text-decoration: underline; */
 
   &:hover {
-    color: black;
+    color: #c75124;
   }
 `;

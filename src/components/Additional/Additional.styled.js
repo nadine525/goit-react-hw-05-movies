@@ -24,6 +24,6 @@ export const StyledLink = styled(Link)`
 
   &:hover,
   &:focus {
-    color: black;
+    color: #c75124;
   }
 `;
