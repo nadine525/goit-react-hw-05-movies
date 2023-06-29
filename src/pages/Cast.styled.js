@@ -8,6 +8,7 @@ export const List = styled.ul`
 export const ActorName = styled.p`
   margin-bottom: 8px;
   font-size: 16px;
+  font-weight: 500;
 `;
 
 export const Character = styled.p`
