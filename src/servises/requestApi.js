@@ -46,4 +46,12 @@ export const getMovieReviews = async id => {
 
   return response.data.results;
 };
-getMovieReviews(385687).then(results => console.log(results));
+// getMovieReviews(385687).then(results => console.log(results));
+
+export const getMovieSearch = async query => {
+  const response = await axios.get(
+    `${BASE_URL}/movie/?api_key=${API_KEY}&query=${query}&language=en-US`
+  );
+
+  return response.data;
+};
