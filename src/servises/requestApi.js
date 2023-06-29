@@ -46,4 +46,4 @@ export const getMovieReviews = async id => {
 
   return response.data.results;
 };
-// getMovieReviews(385687).then(results => console.log(results));
+getMovieReviews(385687).then(results => console.log(results));

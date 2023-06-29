@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react';
 import { getMovieReviews } from '../servises/requestApi';
 import { useParams } from 'react-router-dom';
-import { Comment } from './Reviews.styled';
+import { Comment, Item } from './Reviews.styled';
 
 const Reviews = () => {
-  const [reviews, setReviews] = useState(null);
+  const [reviews, setReviews] = useState([]);
   const { movieId } = useParams();
 
   useEffect(() => {
     getMovieReviews(movieId)
-      .then(data => setReviews(data))
-      .then(error => console.log(error));
+      .then(data => {
+        setReviews(data);
+      })
+      .catch(console.log);
   }, [movieId]);
 
   console.log(reviews);
@@ -19,10 +21,10 @@ const Reviews = () => {
     <>
       <ul>
         {reviews.map(({ id, author, content }) => (
-          <li key={id}>
-            Author: {author}
+          <Item key={id}>
+            Author: <b>{author}</b>
             <Comment>{content}</Comment>
-          </li>
+          </Item>
         ))}
       </ul>
     </>
