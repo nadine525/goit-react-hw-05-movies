@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { getMovieSearch } from '../servises/requestApi';
+import { getMovieSearch } from '../../servises/requestApi';
 import { Input, Button } from './Movies.styled';
-import MoviesList from '../components/MoviesList/MoviesList';
+import MoviesList from '../../components/MoviesList/MoviesList';
 
 const Movies = () => {
   const [input, setInput] = useState('');
@@ -21,8 +21,6 @@ const Movies = () => {
     const form = event.currentTarget;
 
     setSearchParams({ query: form.query.value });
-
-    // console.log(query);
     setInput('');
   };
 

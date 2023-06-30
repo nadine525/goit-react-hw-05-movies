@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   Division,
   Image,
@@ -45,3 +46,14 @@ const Information = ({
 };
 
 export default Information;
+
+Information.propTypes = {
+  original_title: PropTypes.string,
+  overview: PropTypes.string,
+  poster_path: PropTypes.string,
+  release_date: PropTypes.string,
+  genres: PropTypes.arrayOf(
+    PropTypes.shape({ name: PropTypes.string.isRequired })
+  ),
+  vote_average: PropTypes.number,
+};

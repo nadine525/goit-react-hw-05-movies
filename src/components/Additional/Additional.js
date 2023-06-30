@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Division, AddInfoTitle, List, StyledLink } from './Additional.styled';
 
 const Additional = ({ location }) => {
@@ -21,3 +22,13 @@ const Additional = ({ location }) => {
 };
 
 export default Additional;
+
+Additional.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+    search: PropTypes.string.isRequired,
+    key: PropTypes.string.isRequired,
+    hash: PropTypes.string,
+    state: PropTypes.bool,
+  }).isRequired,
+};

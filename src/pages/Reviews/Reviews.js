@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getMovieReviews } from '../servises/requestApi';
+import { getMovieReviews } from '../../servises/requestApi';
 import { useParams } from 'react-router-dom';
 import { Comment, Item, Sory, List, AuthorName } from './Reviews.styled';
 

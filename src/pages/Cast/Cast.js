@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getMovieActorsCast } from '../servises/requestApi';
+import { getMovieActorsCast } from '../../servises/requestApi';
 import { List, ActorName, Character } from './Cast.styled';
 
 const Cast = () => {
