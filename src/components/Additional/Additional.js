@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom';
 import { Division, AddInfoTitle, List, StyledLink } from './Additional.styled';
 
 const Additional = ({ location }) => {

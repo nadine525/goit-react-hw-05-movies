@@ -22,7 +22,7 @@ const Movies = () => {
 
     setSearchParams({ query: form.query.value });
 
-    console.log(query);
+    // console.log(query);
     setInput('');
   };
 
@@ -34,7 +34,7 @@ const Movies = () => {
       .catch(error => console.log(error));
   }, [query]);
 
-  console.log(movies);
+  // console.log(movies);
 
   return (
     <>

@@ -15,7 +15,7 @@ const Reviews = () => {
       .catch(console.log);
   }, [movieId]);
 
-  console.log(reviews);
+  // console.log(reviews);
 
   if (!reviews) {
     return;

@@ -55,11 +55,4 @@ export const getMovieSearch = async query => {
 
   return response.data;
 };
-getMovieReviews('lion').then(results => console.log(results));
-
-// export const getMoviesQuery = async query => {
-//   const response = await axios.get(
-//     `${BASE_URL}search/movie?api_key=${KEY}&query=${query}&language=en-US`
-//   );
-//   return response.data;
-// };
+// getMovieReviews('lion').then(results => console.log(results));

@@ -5,6 +5,7 @@ export const Input = styled.input`
   width: 300px;
   height: 25px;
   border-radius: 5px;
+  margin-bottom: 20px;
 `;
 
 export const Button = styled.button`
