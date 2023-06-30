@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { getMovieSearch } from '../servises/requestApi';
 import { Input, Button } from './Movies.styled';
+import MoviesList from '../components/MoviesList/MoviesList';
 
 const Movies = () => {
   const [input, setInput] = useState('');
@@ -29,7 +30,7 @@ const Movies = () => {
     if (query === '') return;
 
     getMovieSearch(query)
-      .then(data => setMovies(data))
+      .then(data => setMovies(data.results))
       .catch(error => console.log(error));
   }, [query]);
 
@@ -41,6 +42,8 @@ const Movies = () => {
         <Input type="text" name="query" value={input} onChange={handleChange} />
         <Button type="submit">Search</Button>
       </form>
+
+      {movies && <MoviesList movies={movies} />}
     </>
   );
 };
