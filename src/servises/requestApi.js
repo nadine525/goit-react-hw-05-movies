@@ -20,16 +20,7 @@ export const getMovieDetails = async id => {
 
   return response.data;
 };
-getMovieDetails(455476).then(data => console.log(data)); //check
-
-// export const getMoviesFactorsCast = async id => {
-//   const response = await axios.get(
-//     `${BASE_URL}/movie/${id}/credits?api_key=${API_KEY}&language=en-US`
-//   );
-
-//   return response.cast;
-// };
-// getMovieDetails(455476).then(data => console.log(data)); // check
+// getMovieDetails(455476).then(data => console.log(data)); //check
 
 export const getMovieActorsCast = async id => {
   const response = await axios.get(

@@ -24,3 +24,7 @@ GoBackButton.propTypes = {
     hash: PropTypes.string,
   }).isRequired,
 };
+
+// GoBackButton.propTypes = {
+//   backLinkHref: PropTypes.oneOfType([PropTypes.string]),
+// };

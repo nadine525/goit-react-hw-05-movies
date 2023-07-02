@@ -15,7 +15,7 @@ const MovieDetails = () => {
   useEffect(() => {
     getMovieDetails(movieId)
       .then(data => setMovie(data))
-      .catch(console.error());
+      .catch(console.error);
   }, [movieId]);
   // console.log(movie);
 
